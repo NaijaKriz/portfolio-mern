@@ -29,11 +29,6 @@ function Projects() {
             <h1 className="text-secondary text-2xl"> {projects[selectedItemIndex].title} </h1>
             <p className="text-white"> {projects[selectedItemIndex].description} </p>
             <p className="text-white"><a href={projects[selectedItemIndex].link} >Visit website Link </a></p>
-                <p className="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Sequi ex numquam sit perferendis accusamus nisi debitis 
-                    dolorem quo consectetur, maxime officiis quam nobis nulla 
-                    praesentium quas neque, quis mollitia delectus.
-                </p>
             </div>
             </div>
        </div>
