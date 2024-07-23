@@ -25,10 +25,15 @@ function Experience() {
             <div className="flex flex-col gap-10">
             <h1 className="text-secondary text-2xl"> {experiences[selectedItemIndex].title} </h1>
             <h1 className="text-tertiary text-2xl"> {experiences[selectedItemIndex].company} </h1>
-                <p className="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Sequi ex numquam sit perferendis accusamus nisi debitis 
-                    dolorem quo consectetur, maxime officiis quam nobis nulla 
-                    praesentium quas neque, quis mollitia delectus.
+                <p className="text-white">As a full stack developer, I have gained comprehensive expertise in both front-end and back-end development, enabling me to build complete, end-to-end web applications. My skill set spans across various technologies and frameworks, allowing me to handle all aspects of web development with confidence and efficiency.
+
+On the front-end, I have a strong command of HTML, CSS, and JavaScript, along with experience in modern libraries and frameworks such as React. I excel in creating responsive and dynamic user interfaces that offer seamless user experiences across different devices and browsers. My attention to detail and design principles ensures that the applications I develop are both visually appealing and highly functional.
+
+On the back-end, I am proficient in using Node.js and Express to develop robust server-side applications. I have experience with various databases, including MongoDB and SQL, which allows me to design and manage efficient data storage solutions. My understanding of RESTful APIs and their integration has been crucial in building scalable and maintainable web services.
+
+In addition to core development skills, I am well-versed in version control systems like Git, enabling effective collaboration with other developers. I am also familiar with deployment processes which help ensure that the applications I build are reliable and scalable.
+
+Security and performance optimization are key aspects of my development process. 
                 </p>
             </div>
        </div>
