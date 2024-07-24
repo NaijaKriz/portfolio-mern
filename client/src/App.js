@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import { useEffect } from 'react';
 import Loader from './components/Loader';
 import { useDispatch, useSelector } from 'react-redux';
-import { ReloadData, setPortfolioData } from './redux/rootSlice';
+import {HideLoading, ShowLoading, ReloadData, setPortfolioData } from './redux/rootSlice';
 import Admin from './pages/Admin/Index';
 import Login from './pages/Admin/Login';
 
@@ -14,17 +14,22 @@ function App() {
 
   const getPortfolioData = async () =>{
     try {
+      dispatch(ShowLoading())
       const response = await axios.get("/api/portfolio/get-portfolio-data")
       dispatch(setPortfolioData(response.data))
       dispatch(ReloadData(false))
+      dispatch(HideLoading())
     } catch (error) {
-      console.log(error)
+
+      dispatch(HideLoading())
     }
   };
 
   useEffect(() => {
+    if(!portfolioData){
         getPortfolioData();
-      }, []);
+    }
+      }, [portfolioData]);
       
 
       useEffect(() => {
